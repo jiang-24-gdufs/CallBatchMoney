@@ -5,6 +5,9 @@ settings:
   excludeLinksFromLockfile: false
 
 dependencies:
+  create-evm-wallets-csv:
+    specifier: ^1.2.0
+    version: 1.2.0
   ethers:
     specifier: ^6.12.1
     version: 6.12.1
@@ -32,6 +35,20 @@ packages:
 
   /aes-js@4.0.0-beta.5:
     resolution: {integrity: sha512-G965FqalsNyrPqgEGON7nIx1e/OVENSgiEIzyC63haUMuvNnwIgIjMs52hlTCKhkBny7A2ORNlfY9Zu+jmGk1Q==}
+    dev: false
+
+  /create-evm-wallets-csv@1.2.0:
+    resolution: {integrity: sha512-NJhHy186TRzUnvc9uYymOdI0VHiUrRaTPPSqhnM5cu0WDdDKhwnVS8R+FuSunqfsuo2TY7JHvQthrM+ZXdMnEA==}
+    dependencies:
+      csv-writer: 1.6.0
+      ethers: 6.12.1
+    transitivePeerDependencies:
+      - bufferutil
+      - utf-8-validate
+    dev: false
+
+  /csv-writer@1.6.0:
+    resolution: {integrity: sha512-NOx7YDFWEsM/fTRAJjRpPp8t+MKRVvniAg9wQlUKx20MFrPs73WLJhFf5iteqrxNYnsy924K3Iroh3yNHeYd2g==}
     dev: false
 
   /ethers@6.12.1:
